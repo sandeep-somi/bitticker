@@ -48,8 +48,8 @@ export default function AppWrapper() {
           <Widget />
         </Col>
         <Col md="12" className="p-0 pt-1 pl-1">
-          {socket && <Button onClick={closeWebSocket} size="sm" variant="outline-danger">Close Connection</Button>}
-          {!socket && <Button onClick={createWebSocket} size="sm" variant="outline-success" disabled={!isOnline}>Start Connection</Button>}
+          {socket && <Button onClick={closeWebSocket} size="sm" variant="outline-danger">Disconnect</Button>}
+          {!socket && <Button onClick={createWebSocket} size="sm" variant="outline-success" disabled={!isOnline}>Connect</Button>}
         </Col>
       </Row>
     </Container>
